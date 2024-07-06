@@ -1,4 +1,18 @@
-alert("Hello everyone 🖐️, This is my resume 😊 ");
+function showGreeting() {
+            var now = new Date();
+            var hours = now.getHours();
+            var message = "";
+
+            if (hours >= 0 && hours < 12) {
+                message = "Hello everyone 🖐️,Good Morning";
+            } else if (hours >= 12 && hours < 18) {
+                message = "Hello everyone 🖐️,Good Afternoon";
+            } else {
+                message = "Hello everyone 🖐️,Good Evening";
+            }
+
+            alert(message);
+        }
 
 function adjustLayout() {
     const contentWrapper = document.getElementById('contentWrapper');
