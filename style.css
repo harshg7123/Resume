@@ -1,0 +1,198 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.resume-container {
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.blur{
+    max-width: 1200px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    height: 90vh;
+    /* overflow: hidden; */
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.left-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    flex: 0 0 33.33%;
+}
+
+.right-section {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    /* left section under line */
+    border-bottom: 2px solid #02c9fa; 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('check-mark.png') no-repeat left center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .container-fluid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section,
+    .right-section {
+        height: auto;
+        overflow: visible;
+        flex: 1 1 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-section,
+    .right-section {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .resume-container {
+        height: auto;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 10px;
+        height: auto;
+        overflow: visible;
+        flex: 1 1 auto;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header h1 {
+        font-size: 1.2em;
+    }
+
+    .header h2 {
+        font-size: 1em;
+    }
+}
+
+/* Custom Scrollbar CSS */
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #131842;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF7EE2, #3FA2F6, #E90074);
+    border-radius: 10px;
+    border: 2px solid #131842;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: linear-gradient(180deg, #FF7EE2, #3FA2F6, #E90074) #131842;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: linear-gradient(180deg, #FF7EE2, #3FA2F6, #E90074) #131842;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #131842;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF7EE2, #3FA2F6, #E90074);
+    border-radius: 10px;
+    border: 2px solid #131842;
+}
